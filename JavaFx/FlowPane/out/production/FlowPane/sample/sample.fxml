@@ -1,0 +1,27 @@
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.StackPane?>
+<!--<TilePane fx:controller="sample.Controller"-->
+          <!--xmlns:fx="http://javafx.com/fxml" orientation="HORIZONTAL">-->
+
+    <!--<Button text="Button 1"/>-->
+    <!--<Button text="Button 2"/>-->
+    <!--<Button text="Button 3"/>-->
+    <!--<Button text="Button 4"/>-->
+    <!--<Button text="Button 5"/>-->
+    <!--<Button text="Button 6"/>-->
+    <!--<Button text="Button 7"/>-->
+    <!--<Button text="Button 8"/>-->
+    <!--<Button text="Button 9"/>-->
+    <!--<Button text="Button 10"/>-->
+    <!--<Button text="Button 11"/>-->
+
+<!--</TilePane>-->
+<?import javafx.scene.control.Label?>
+<StackPane fx:controller="sample.Controller"
+           xmlns:fx="http://javafx.com/fxml">
+
+    <Label text="The label text is here" style="-fx-background-color: red"></Label>
+    <Button text="My button" style="-fx-background-color: black"></Button>
+</StackPane>
