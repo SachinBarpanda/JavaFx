@@ -6,7 +6,13 @@
 <?import javafx.scene.control.TextField?>
 <GridPane fx:controller="sample.Controller"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-    <TextField fx:id="textField" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-    <Button text="Hello Guys" GridPane.rowIndex="0" GridPane.columnIndex="0"
+
+    <TextField fx:id="textField" GridPane.rowIndex="0" GridPane.columnIndex="0"
+                onKeyReleased="#handleKeyRelesed"/>
+
+    <Button fx:id="HelloButton" text="Hello Guys" GridPane.rowIndex="1" GridPane.columnIndex="0"
             onAction="#onButtonClicked"/>
+    <Button fx:id="ByeButton" text="Bye Guys" GridPane.rowIndex="1" GridPane.columnIndex="1"
+            onAction="#onButtonClicked"/>
+
 </GridPane>
