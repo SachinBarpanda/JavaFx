@@ -31,7 +31,7 @@ public class Controller {
     public void handleKeyRelesed(){
         String text = textField.getText();
         boolean disableButtons = text.isEmpty()|| text.trim().isEmpty();
-        HelloButton.setDefaultButton(disableButtons);
-        ByeButton.setDefaultButton(disableButtons);
+        HelloButton.setDisable(disableButtons);
+        ByeButton.setDisable(disableButtons);
     }
 }
