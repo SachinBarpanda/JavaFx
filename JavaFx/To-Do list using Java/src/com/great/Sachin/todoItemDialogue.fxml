@@ -1,0 +1,19 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane fx:controller="com.great.Sachin.DialogueController"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <headerText>
+        We could put instruction here!
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label  text="Short Description" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="ShortDescription" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label text="Details" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextArea fx:id="DetailsPane" GridPane.columnIndex="1" GridPane.rowIndex="1" wrapText="true"/>
+            <Label text="DeadLine" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="DeadLinePicker" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        </GridPane>
+    </content>
+</DialogPane>
