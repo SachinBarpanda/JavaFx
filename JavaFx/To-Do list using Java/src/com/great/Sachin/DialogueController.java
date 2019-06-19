@@ -11,7 +11,7 @@ import java.time.LocalDate;
 
 public class DialogueController {
     @FXML
-    private TextField ShortDescription;
+    public TextField ShortDescription;
     @FXML
     private TextArea DetailsPane;
     @FXML
@@ -23,6 +23,8 @@ public class DialogueController {
         LocalDate DeadLine = DeadLinePicker.getValue();
 
         TodoData.getInstance().addToDoItems(new ToDoItems(shortDescription,details,DeadLine));
-
     }
+
+
+
 }
