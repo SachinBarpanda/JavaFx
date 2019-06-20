@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+       <HBox stylesheets="@styles.css" GridPane.rowIndex="1">
+      <Button mnemonicParsing="false" onAction="#handleAction" text="OK" GridPane.rowIndex="1">
+            <HBox.margin>
+               <Insets bottom="5.0" left="4.0" right="2.0" top="2.0" />
+            </HBox.margin></Button>
+      <Button mnemonicParsing="false" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <HBox.margin>
+               <Insets bottom="5.0" left="4.0" right="2.0" top="2.0" />
+            </HBox.margin></Button>
+      <Button mnemonicParsing="false" text="Help" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <HBox.margin>
+               <Insets bottom="5.0" left="4.0" right="2.0" top="2.0" />
+            </HBox.margin></Button>
+         <GridPane.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </GridPane.margin>
+       </HBox>
+   <Label fx:id="label" text="Label" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
