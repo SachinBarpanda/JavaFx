@@ -1,0 +1,21 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane fx:controller="com.great.Sachin.DialogueController"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <headerText>
+        We could put new instruction here!
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label  text="First Name" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="firstNamePane" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label text="Last Name" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextArea fx:id="lastNamePane" GridPane.columnIndex="1" GridPane.rowIndex="1" wrapText="true"/>
+            <Label text="Phone Number" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="PhoneNumberPane" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Label text="Note" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <TextField fx:id="NotePane" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>

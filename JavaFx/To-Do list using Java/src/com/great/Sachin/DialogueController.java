@@ -25,6 +25,9 @@ public class DialogueController {
         TodoData.getInstance().addToDoItems(new ToDoItems(shortDescription,details,DeadLine));
     }
 
+    public void editContact(ToDoItems contact) {
+        ShortDescription.setText(contact.getShortDescription());
+        DetailsPane.setText(contact.getDetails());
 
-
+    }
 }

@@ -92,7 +92,7 @@ public class Controller {
             }
         });
 
-//        todoListView.setItems((TodoData.getInstance().getToDoItems()));
+       //todoListView.setItems((TodoData.getInstance().getToDoItems()));
         todoListView.setItems(sort);
         todoListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         todoListView.getSelectionModel().selectFirst();
@@ -166,6 +166,7 @@ public class Controller {
 
     @FXML
     public void editItem(ToDoItems item){//this is to edit
+        ToDoItems items = todoListView.getSelectionModel().getSelectedItem();
         Dialog<ButtonType> dialog1 = new Dialog<>();
         dialog1.initOwner(mainBorderPane.getScene().getWindow());
         dialog1.setTitle("Edit "+item.getShortDescription());
@@ -183,6 +184,9 @@ public class Controller {
 
         dialog1.getDialogPane().getButtonTypes().add(ButtonType.OK);
         dialog1.getDialogPane().getButtonTypes().add(ButtonType.CANCEL);
+
+        DialogueController contactController = fxmlLoader.getController();
+        contactController.editContact(items);
 
         Optional<ButtonType> result = dialog1.showAndWait();
         if(result.isPresent()&& result.get()==ButtonType.OK){

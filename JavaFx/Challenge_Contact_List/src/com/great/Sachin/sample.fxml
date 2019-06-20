@@ -1,0 +1,47 @@
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox fx:id="VBoxPane" fx:controller="com.great.Sachin.Controller"
+      xmlns:fx="http://javafx.com/fxml">
+
+    <MenuBar>
+        <Menu text="File">
+            <items>
+                <MenuItem text="Add" onAction="#showNewItemDialogue"/>
+                <SeparatorMenuItem/>
+                <MenuItem text ="Edit" />
+                <SeparatorMenuItem/>
+                <MenuItem text ="Delete" />
+            </items>
+        </Menu>
+    </MenuBar>
+
+    <TableView fx:id="tableView" >
+        <columns >
+            <TableColumn text="First name" prefWidth="150" >
+                <cellValueFactory>
+                    <PropertyValueFactory property="firstName" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Last name" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="lastName" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Phone Number " prefWidth="250">
+                <cellValueFactory>
+                    <PropertyValueFactory property="phoneNumber" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn text="Notes" prefWidth="250">
+                <cellValueFactory>
+                    <PropertyValueFactory property="notes" />
+                </cellValueFactory>
+            </TableColumn>
+
+        </columns>
+    </TableView>
+</VBox>
